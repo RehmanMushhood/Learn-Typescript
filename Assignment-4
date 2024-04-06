@@ -1,0 +1,122 @@
+// 1. Hello Variable
+let greeting: string = "Hello, World!";
+console.log(greeting);
+
+// 2. Basic Math
+let num1: number = 10;
+let num2: number = 5;
+console.log("Sum:", num1 + num2);
+console.log("Difference:", num1 - num2);
+console.log("Product:", num1 * num2);
+console.log("Quotient:", num1 / num2);
+
+// 3. Swapping Values
+let a: number = 1;
+let b: number = 2;
+[a, b] = [b, a];
+console.log("a:", a, "b:", b);
+
+// 4. Type Annotation (TypeScript)
+let message: string;
+message = "Hello, TypeScript!";
+// Attempting to assign a number to a string variable will result in a TypeScript error
+// message = 123;
+
+// 5. Modulus Operator
+let num1_mod: number = 10;
+let num2_mod: number = 3;
+console.log("Remainder:", num1_mod % num2_mod);
+
+// 6. Increment Challenge
+let counter: number = 0;
+counter++;
+console.log("Counter after incrementing by 1:", counter);
+counter += 1;
+console.log("Counter after adding 1:", counter);
+
+// 7. Logical Gates
+let a_logic: boolean = true,
+    b_logic: boolean = false,
+    c_logic: boolean = true;
+console.log("AND Gate:", a_logic && b_logic); // false
+console.log("OR Gate:", a_logic || b_logic);  // true
+console.log("NOT Gate for c:", !c_logic);     // false
+
+// 8. Compound Assignment
+let num_compound: number = 10;
+num_compound += 5;  // Add and assign
+console.log("After +=:", num_compound);
+num_compound -= 3;  // Subtract and assign
+console.log("After -=:", num_compound);
+num_compound *= 2;  // Multiply and assign
+console.log("After *=:", num_compound);
+num_compound /= 4;  // Divide and assign
+console.log("After /=:", num_compound);
+
+// 9. Even or Odd
+let num_even_odd: number = 7;
+if (num_even_odd % 2 === 0) {
+    console.log("Even");
+} else {
+    console.log("Odd");
+}
+
+// 10. Voting Eligibility
+let age_vote: number = 20;
+if (age_vote >= 18) {
+    console.log("Eligible to vote");
+} else {
+    console.log("Not eligible to vote");
+}
+
+// 11. Grading System
+let score_grade: number = 85;
+let grade: string;
+if (score_grade >= 90) {
+    grade = "A";
+} else if (score_grade >= 80) {
+    grade = "B";
+} else if (score_grade >= 70) {
+    grade = "C";
+} else if (score_grade >= 60) {
+    grade = "D";
+} else {
+    grade = "F";
+}
+console.log("Grade:", grade);
+
+// 12. Max of Three
+let x_max: number = 5,
+    y_max: number = 10,
+    z_max: number = 7;
+let max: number = Math.max(x_max, y_max, z_max);
+console.log("Maximum:", max);
+
+// 13. Leap Year Checker
+let year_leap: number = 2024;
+if ((year_leap % 4 === 0 && year_leap % 100 !== 0) || year_leap % 400 === 0) {
+    console.log("Leap year");
+} else {
+    console.log("Not a leap year");
+}
+
+// 14. Fahrenheit to Celsius Converter
+let fahrenheit_temp: number = 75;
+let celsius_temp: number = (fahrenheit_temp - 32) * (5 / 9);
+console.log("Celsius Temperature:", celsius_temp);
+
+// 15. Positive, Negative, or Zero
+let number_sign: number = -10;
+if (number_sign > 0) {
+    console.log("Positive");
+} else if (number_sign < 0) {
+    console.log("Negative");
+} else {
+    console.log("Zero");
+}
+
+// 16. Multiplication Table
+let number_table: number = 7;
+for (let i = 1; i <= 10; i++) {
+    console.log(`${number_table} * ${i} =`, number_table * i);
+}
